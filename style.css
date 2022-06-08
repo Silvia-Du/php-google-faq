@@ -1,0 +1,32 @@
+/* general */
+
+p, li{
+  font-size: 0.9rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* header */
+header{
+  border-bottom: 1px solid rgb(94, 92, 92);
+}
+
+header img{
+  width: 70px;
+}
+
+header span{
+  font-size: 1.4rem;
+  color: rgb(94, 92, 92);
+}
+header li{
+  list-style: none;
+  margin-right: 50px;
+}
+header li a{
+  color: rgb(102, 100, 100);
+  font-size: 1.1rem;
+}
+
