@@ -1,11 +1,15 @@
 /* general */
 
 p, li{
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 a{
   text-decoration: none;
+}
+
+a i{
+  font-size: 0.7rem;
 }
 
 /* header */
