@@ -116,6 +116,26 @@
       'href'=> '#',
       'active'=> true
     ],
+  ];
+
+  $footerList =[
+    [
+      'name'=> 'Google',
+      'href'=> '#'
+    ],
+    [
+      'name'=> 'Tutto su Google',
+      'href'=> '#'
+    ],
+    [
+      'name'=> 'Privacy',
+      'href'=> '#'
+    ],
+    [
+      'name'=> 'Termini',
+      'href'=> '#'
+    ],
+
   ]
 
 
@@ -145,7 +165,7 @@
   </style>
 </head>
 <body>
-
+    <!-- HEADER -->
     <header class="px-4 d-flex justify-content-center flex-column">
 
       <div class="d-flex align-items-center mt-3 mb-1">
@@ -163,6 +183,7 @@
         <?php endforeach; ?>
       </ul>
     </header>
+    <!-- MAIN -->
     <main>
       <div class="container pt-5 pb-4">
         <div class="row d-flex justify-content-center">
@@ -175,11 +196,42 @@
               </div>
             
             <?php endforeach; ?>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            
           </div>
         </div>
       </div>
     </main>
+    <!-- FOOTER -->
+    <footer class="py-3">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-9 d-flex justify-content-between">
+
+            <ul class="d-flex ps-0 mb-0">
+              <?php foreach($footerList as $item): ?>
+              <li class="me-2">
+                <a href="<?php echo $item['href']?>"><?php echo $item['name']?></a>
+              </li>
+              <?php endforeach; ?>
+            </ul>
+
+            <div class="d-flex">
+              <div class="me-2 language">
+              <i class="fa-solid fa-globe"></i>
+              </div>
+            <select class="form-select-sm py-0" aria-label="Default select example">
+              <option selected>Italiano</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
   
 </body>
 </html>
